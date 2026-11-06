@@ -23,7 +23,8 @@ Copy-Item $ExeSourcePath "$targetDir\SET.exe" -Force
 } | ConvertTo-Json
 
  $manifestPath = Join-Path $PSScriptRoot "manifest.json"
-[System.IO.File]::WriteAllText($manifestPath, $manifest, [System.Text.Encoding]::UTF8)
+ $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($manifestPath, $manifest, $utf8NoBom)
 
 # 4. Коммит и пуш
 git add .
