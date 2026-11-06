@@ -1,5 +1,5 @@
-{
-  "latestVersion": "0.9.8",
-  "downloadUrl": "https://github.com/SeverNG/SET/raw/main/releases/v0.9.8/SET.exe",
-  "checksum": "sha256:d7045ffb08fd2f42d99957388cad6967f959528e2fe54f03e7d60bd3bae5b8e0"
+﻿{
+    "latestVersion":  "0.9.9",
+    "checksum":  "sha256:8ede9f5b7ca533e16ad69826389a481b84d6b5a52200755a92fdb96a34690a44",
+    "downloadUrl":  "https://github.com/SeverNG/SET/raw/main/releases/v0.9.9/SET.exe"
 }

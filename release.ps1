@@ -22,7 +22,8 @@ Copy-Item $ExeSourcePath "$targetDir\SET.exe" -Force
     checksum = "sha256:$hash"
 } | ConvertTo-Json
 
-[System.IO.File]::WriteAllText("manifest.json", $manifest, [System.Text.Encoding]::UTF8)
+ $manifestPath = Join-Path $PSScriptRoot "manifest.json"
+[System.IO.File]::WriteAllText($manifestPath, $manifest, [System.Text.Encoding]::UTF8)
 
 # 4. Коммит и пуш
 git add .
